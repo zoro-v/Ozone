@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoro-v Cybersecurity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+  <div class="main">
+    <h1>⚡ im Ozone ( Blothunter , BugBounty , Cybersecurity )  ⚡</h1>
+    <p>Bug Bounty | Web Exploitation | Automation in Python</p>
+    <p>
+      <a href="https://github.com/zoro-v" target="_blank">GitHub</a> |
+      <a href="https://t.me/Ozone_su_bot" target="_blank">Telegram</a> |
+      <a href="mailto:Ozone_6@hotmail.com.com">Email</a>
+    </p>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('matrix');
+    const ctx = canvas.getContext('2d');
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+    const letters = Array(256).join("1").split("");
+    function draw() {
+      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#0f0";
+      letters.map((y_pos, index) => {
+        const text = String.fromCharCode(12448 + Math.random() * 33);
+        const x_pos = index * 10;
+        ctx.fillText(text, x_pos, y_pos);
+        letters[index] = y_pos > 758 + Math.random() * 1e4 ? 0 : y_pos + 10;
+      });
+    }
+    setInterval(draw, 33);
+  </script>
+</body>
+</html>
