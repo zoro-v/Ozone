@@ -1,0 +1,46 @@
+/* خلفية Matrix */
+body {
+  background: black;
+  color: #00ff66;
+  font-family: monospace;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+/* تأثير matrix */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* النص الرئيسي */
+.main {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-size: 3em;
+  color: #00ff66;
+  text-shadow: 0 0 10px #00ff66;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #ff0000; }
+  50% { text-shadow: -2px -2px #00ffff; }
+  100% { text-shadow: 2px -2px #ff00ff; }
+}
+
+a {
+  color: #00ff66;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 1.2em;
+}
