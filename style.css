@@ -49,43 +49,37 @@ a {
     font-size: 1.2em;
 }
 
-/* 🎯 توسيط الكلام الأزرق */
+/* توسيط الكلام الأزرق */
 .typing-svg-container {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* 🚀 تنسيق Flexbox للصور (التعديل المطلوب: يمين ويسار ومتجاوب) 🚀 */
-
-/* 1. الحاوية (image-container): تجعل الصور جنباً إلى جنب */
+/* 🚀 تنسيق Flexbox للصور 🚀 */
 .image-container {
-    display: flex; /* تفعيل Flexbox */
-    justify-content: space-around; /* توزيع الصور بالتساوي (واحدة يمين والأخرى يسار) */
-    align-items: center; /* محاذاة عمودية */
-    flex-wrap: wrap; /* السماح بالنزول لسطر جديد عند ضيق المساحة */
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: wrap; 
     margin: 40px 0;
 }
 
-/* 2. تنسيق الصور (responsive-image): لضمان التجاوب على جميع الشاشات */
+/* تنسيق الصور بدون الإطار والظل */
 .responsive-image {
-    width: 45%; /* كل صورة تأخذ تقريباً نصف العرض في الشاشات الكبيرة */
-    max-width: 300px; /* تحديد أقصى عرض */
+    width: 45%;
+    max-width: 300px; 
     height: auto; 
     margin: 15px; 
-    /* تم حذف الأسطر التالية لإزالة الإطار والظل: */
-    /* border: 1px solid #00ff66; */
-    /* box-shadow: 0 0 10px #00ff66; */
-    /* border-radius: 5px; */
+    border-radius: 5px; /* تم الإبقاء على الحواف المستديرة */
 }
 
-/* 📱 استعلام الوسائط لضمان التجاوب على الجوال (Media Query) */
-/* عند عرض أقل من 650 بكسل، اجعل الصور تتكدس عمودياً */
+/* 📱 استعلام الوسائط لضمان التجاوب على الجوال */
 @media (max-width: 650px) {
     .image-container {
-        flex-direction: column; /* تغيير اتجاه Flex إلى عمودي */
+        flex-direction: column;
     }
 
     .responsive-image {
-        width: 80%; /* زيادة عرض الصورة لتملأ الشاشة على الجوال */
+        width: 80%;
     }
 }
