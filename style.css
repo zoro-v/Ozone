@@ -72,9 +72,10 @@ a {
     max-width: 300px; /* تحديد أقصى عرض */
     height: auto; 
     margin: 15px; 
-    border: 1px solid #00ff66;
-    box-shadow: 0 0 10px #00ff66;
-    border-radius: 5px;
+    /* تم حذف الأسطر التالية لإزالة الإطار والظل: */
+    /* border: 1px solid #00ff66; */
+    /* box-shadow: 0 0 10px #00ff66; */
+    /* border-radius: 5px; */
 }
 
 /* 📱 استعلام الوسائط لضمان التجاوب على الجوال (Media Query) */
