@@ -49,13 +49,22 @@ a {
     font-size: 1.2em;
 }
 
-/* توسيط الكلام الأزرق */
+/* 🎯 توسيط الكلام الأزرق */
 .typing-svg-container {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* 🚀 تنسيق Flexbox للصور 🚀 */
+/* ❌ التعديل لإزالة التحديد الأخضر عند النقر أو التحديد ❌ */
+/* نطبقها على كل الصور والروابط لمنع ظهور أي تحديد افتراضي */
+.responsive-image:focus,
+a:focus,
+img:focus {
+    outline: none !important;
+}
+/* ----------------------------------------------------- */
+
+/* 🚀 تنسيق Flexbox للصور */
 .image-container {
     display: flex; 
     justify-content: space-around;
@@ -64,13 +73,13 @@ a {
     margin: 40px 0;
 }
 
-/* تنسيق الصور بدون الإطار والظل */
+/* تنسيق الصور */
 .responsive-image {
     width: 45%;
     max-width: 300px; 
     height: auto; 
     margin: 15px; 
-    border-radius: 5px; /* تم الإبقاء على الحواف المستديرة */
+    border-radius: 5px;
 }
 
 /* 📱 استعلام الوسائط لضمان التجاوب على الجوال */
