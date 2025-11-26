@@ -49,7 +49,13 @@ a {
     font-size: 1.2em;
 }
 
-/* 🚀 تنسيق Flexbox للصور (التعديل المطلوب) 🚀 */
+/* 🎯 توسيط الكلام الأزرق */
+.typing-svg-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 🚀 تنسيق Flexbox للصور (التعديل المطلوب: يمين ويسار ومتجاوب) 🚀 */
 
 /* 1. الحاوية (image-container): تجعل الصور جنباً إلى جنب */
 .image-container {
